@@ -74,7 +74,7 @@ int main() {
 
   /*
   // Even - Odd
-  printf("\nEven - Odd:\n");
+  printf("\n\nEven - Odd:\n");
   /* Scan an integer
   If the number is even - print 1, else - print 0. */
 
