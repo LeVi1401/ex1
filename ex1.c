@@ -31,7 +31,7 @@ int main() {
 
 
   // Set bit - part 2
-  printf("\n\nSet bit:\n");
+  printf("\nSet bit:\n");
 
   int num2High, num2Low, num2, diff2, index2, bit2;
 
@@ -73,7 +73,7 @@ int main() {
 
 
   // Toggle bit - part 3
-  printf("\n\nToggle bit:\n");
+  printf("\nToggle bit:\n");
 
   int num3, index3, bit3, diff3;
 
@@ -104,7 +104,7 @@ int main() {
   Print the new number. */
 
   // Even - Odd - part 4
-  printf("\n\nEven - Odd:\n");
+  printf("\nEven - Odd:\n");
 
   int num4;
 
@@ -120,7 +120,7 @@ int main() {
 
 
   // 3, 5, 7, 11 - part 5
-  printf("\n\n3, 5, 7, 11:\n");
+  printf("\n3, 5, 7, 11:\n");
 
   int firstNum5, secondNum5, sum5, bitPos3, bitPos5, bitPos7, bitPos11;
 
