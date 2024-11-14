@@ -139,7 +139,7 @@ int main() {
   bitPos7 = ((sum5 >> 7) % 2) == 1;
   bitPos11 = ((sum5 >> 11) % 2) == 1;
 
-  printf("The 3,5,7,11 bits are: %d%d%d%d", bitPos3, bitPos5, bitPos7,bitPos11);
+  printf("The 3,5,7,11 bits are: %d%d%d%d\n", bitPos3, bitPos5, bitPos7,bitPos11);
   /* Scan two integers in octal base
   sum them up and print the result in hexadecimal base
   Print only 4 bits, in positions: 3,5,7,11 in the result. */
