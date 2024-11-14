@@ -124,7 +124,7 @@ int main() {
 
   int firstNum5, secondNum5, sum5, bitPos3, bitPos5, bitPos7, bitPos11;
 
-  printf("Please enter the first number(octal):\n");
+  printf("Please enter the first number (octal):\n");
   scanf("%o", &firstNum5);
   printf("Please enter the second number (octal):\n");
   scanf("%o", &secondNum5);
