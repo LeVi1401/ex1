@@ -10,7 +10,7 @@ Assignment: ex1
 int main() {
   
   // What bit - part 1
-  /*printf("What bit:\n");
+  printf("What bit:\n");
 
   int num1, index1, bit1;
 
@@ -31,7 +31,7 @@ int main() {
 
 
   // Set bit - part 2
-  /*printf("\nSet bit:\n");
+  printf("\nSet bit:\n");
 
   int num2High, num2Low, num2, diff2, index2, bit2;
 
@@ -73,7 +73,7 @@ int main() {
 
 
   // Toggle bit - part 3
-  /*printf("\nToggle bit:\n");
+  printf("\nToggle bit:\n");
 
   int num3, index3, bit3, diff3;
 
