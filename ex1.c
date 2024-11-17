@@ -22,7 +22,7 @@ int main() {
   //checking the bit in position of index
   bit1 = num1 >> index1;
   //checking the value of the bit
-  bit1 = (bit1 % 2 == 1);
+  bit1 = (bit1 % 2);
 
   printf("The bit in position %d of number %d is: %d\n", index1, num1, bit1);
 
@@ -87,7 +87,7 @@ int main() {
 
   //getting the wanted bit
   num3 = num3 >> index3;
-  bit3 = (num3 % 2 == 1);
+  bit3 = (num3 % 2);
 
   //toggle the bit
   num3 += (bit3 ^ 1);
@@ -106,13 +106,14 @@ int main() {
   // Even - Odd - part 4
   printf("\nEven - Odd:\n");
 
-  int num4;
+  int num4, bit4;
 
   printf("Please enter a number:\n");
   scanf("%d", &num4);
 
   //return true(1) if even and false(0) if odd
-  printf("%d\n", (num4 % 2 == 0));
+  bit4 = (num4 % 2);
+  printf("%d\n", (bit4 ^ 1));
 
   /* Scan an integer
   If the number is even - print 1, else - print 0. */
