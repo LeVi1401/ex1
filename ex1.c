@@ -22,7 +22,7 @@ int main() {
   //checking the bit in position of index
   bit1 = num1 >> index1;
   //checking the value of the bit
-  bit1 = (bit1 % 2);
+  bit1 = ((num1 >> index1) & 1);
 
   printf("The bit in position %d of number %d is: %d\n", index1, num1, bit1);
 
@@ -46,7 +46,7 @@ int main() {
   //getting the wanted bit
   num2High = num2;
   num2High = num2High >> index2;
-  bit2 = num2High % 2;
+  bit2 = (num2 >> index2) & 1;
 
   //setting index to 0
   num2Low = num2High - bit2;
@@ -86,8 +86,7 @@ int main() {
   diff3 = num3 - ((num3 >> index3) << index3);
 
   //getting the wanted bit
-  num3 = num3 >> index3;
-  bit3 = (num3 % 2);
+  bit3 = ((num3 >> index3) & 1);
 
   //toggle the bit
   num3 += (bit3 ^ 1);
@@ -112,8 +111,8 @@ int main() {
   scanf("%d", &num4);
 
   //return true(1) if even and false(0) if odd
-  bit4 = (~num4 % 2);
-  printf("%d\n", (bit4 && 1));
+  bit4 = (~num4 & 1);
+  printf("%d\n", (bit4 & 1));
 
   /* Scan an integer
   If the number is even - print 1, else - print 0. */
@@ -135,10 +134,10 @@ int main() {
   printf("The sum in hexadecimal: %X\n", sum5);
 
   //setting the bits in the correct positions
-  bitPos3 = ((sum5 >> 3) % 2) == 1;
-  bitPos5 = ((sum5 >> 5) % 2) == 1;
-  bitPos7 = ((sum5 >> 7) % 2) == 1;
-  bitPos11 = ((sum5 >> 11) % 2) == 1;
+  bitPos3 = ((sum5 >> 3) & 1);
+  bitPos5 = ((sum5 >> 5) & 1);
+  bitPos7 = ((sum5 >> 7) & 1);
+  bitPos11 = ((sum5 >> 11) & 1);
 
   printf("The 3,5,7,11 bits are: %d%d%d%d\n", bitPos3, bitPos5, bitPos7,bitPos11);
   /* Scan two integers in octal base
